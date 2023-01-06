@@ -1,5 +1,5 @@
 //1
-var hello; //se crea variable 
+var hello; //se declara variable 
 console.log(hello); // imprime undefined
 hello = 'world';
 
