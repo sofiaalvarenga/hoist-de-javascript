@@ -37,9 +37,8 @@ eat(); //se invoca la función eat()
 
 //5
 var mean; //se declara variable 
-var food;
 mean(); //Mean no existe como función declarativa. No puede ser llamada antes de declararse porque es una función expresiva en una variable.
-console.log(food); // food no está definida 
+console.log(food); // Error: food no está definida 
 mean = function() { // Función expresiva: guarda función dentro de una variable
     var food; //variable local
     food = "chicken";
@@ -47,7 +46,7 @@ mean = function() { // Función expresiva: guarda función dentro de una variabl
     food = "fish";
     console.log(food);
 }
-console.log(food); // food no está definida
+console.log(food); // Error: food no está definida
 
 //6
 var genre;
