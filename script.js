@@ -31,7 +31,7 @@ eat(); //se invoca la función eat()
 function eat(){
     var food; // variable local
     food = 'half-chicken'; 
-    console.log(food); // imrpime 'half-chicken'
+    console.log(food); // imprime 'half-chicken'
     var food = 'gone';
 }
 
@@ -51,7 +51,7 @@ console.log(food); // food no está definida fuera de function()
 
 //6
 var genre;
-console.log(genre); // imrpime indefined
+console.log(genre); // imprime indefined
 genre = "disco"; //variable global
 rewind(); //se invoca función rewind ()
 function rewind() {
@@ -61,7 +61,7 @@ function rewind() {
     genre = "r&b"; 
     console.log(genre); // imprime "r&b"
 }
-console.log(genre); // imrpime "disco"
+console.log(genre); // imprime "disco"
 
 //7
 var dojo; //variable global
