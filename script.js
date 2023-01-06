@@ -36,11 +36,11 @@ function eat(){
 }
 
 //5
-var food; //se crea variable 
-var mean; //se crea variable 
-mean(); //mean no existe como función
+var food; //se declara variable 
+var mean; //se declara variable 
+mean(); //Mean no existe como función declarativa. No puede ser llamada antes de declararse porque es una función expresiva en una variable.
 console.log(food); // food no está definida fuera de function()
-mean = function() {
+mean = function() { // Función expresiva: guarda función dentro de una variable
     var food; //variable local
     food = "chicken";
     console.log(food);
@@ -78,32 +78,21 @@ function learn() {
 console.log(dojo); // imprime "san jose"
 
 //8
-console.log(makeDojo("Chicago", 65));
-console.log(makeDojo("Berkeley", 0));
 function makeDojo(name, students){
     const dojo = {};
-    dojo.name = name;
-    dojo.students = students;
+    dojo.name = name; //incluir en el objeto dojo, name como name de entrada
+    dojo.students = students; //incluir en el objeto dojo, students como students de entrada
     if(dojo.students > 50){
-        dojo.hiring = true;
+        dojo.hiring = true; //incluir en el objeto dojo, hiring como boleano true
     }
     else if(dojo.students <= 0){
-        dojo = "closed for now";
+        dojo = "closed for now"; // Pretende asignar un string como valor a dojo, que es un objeto {}
     }
     return dojo;
 }
-// makeDojo ()
-// const dojo 
-// dojo = {}
-// dojo.name = name
-// dojo.students = students
-// if (dojo.students > 50) { dojo.hiring = true}
-// else if (dojo.students <= 0) { dojo = "closed for now"}
-// return dojo;
-// ejecuta function makeDojo("Chicago", 65)
-// console.log(makeDojo("Chicago", 65)) // Imprime el string {name: chicago, students: 65, hiring: true}
-// ejecuta function makeDojo ("Berkeley", 0)
-// console.log(makeDojo("Berkeley", 0) // Imprime "closed for now"
+console.log(makeDojo("Chicago", 65)); // Imprime el string {name: chicago, students: 65, hiring: true}
+console.log(makeDojo("Berkeley", 0)); // Imposible asignar un string al objeto dojo porque va cambiar su naturaleza {}
+
 
 
 
