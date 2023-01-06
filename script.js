@@ -57,7 +57,7 @@ function eat(){
 // console.log(food) // imrpime 'half-chicken'
 // food = 'gone'
 
-//6
+//5
 mean();
 console.log(food);
 var mean = function() {
@@ -67,14 +67,18 @@ var mean = function() {
     console.log(food);
 }
 console.log(food);
-// mean() no es una función
-// var food
-// console.log (food)// food no está definida
 // var mean
+// var food
+// se invoca la función mean () // no es un función
+// console.log (food)// food no está definida
 // mean = funtion()
+// var food 
+// food = "chicken"
+// console.log (food)
+// food = "fish"
 // console.log (food)// food no está definida
 
-//7
+//6
 console.log(genre);
 var genre = "disco";
 rewind();
@@ -96,7 +100,7 @@ console.log(genre);
 // console.log(genre)// imprime "r&b"
 // console.log(genre)// imrpime "disco"
 
-//8
+//7
 dojo = "san jose";
 console.log(dojo);
 learn();
@@ -116,6 +120,36 @@ console.log(dojo);
 // dojo = "burbank" *variable local*
 // console.log (dojo)// imprime "burbank"
 // console.log (dojo)// imprime "san jose"
+
+//8
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+function makeDojo(name, students){
+    const dojo = {};
+    dojo.name = name;
+    dojo.students = students;
+    if(dojo.students > 50){
+        dojo.hiring = true;
+    }
+    else if(dojo.students <= 0){
+        dojo = "closed for now";
+    }
+    return dojo;
+}
+// makeDojo ()
+// const dojo 
+// dojo = {}
+// dojo.name = name
+// dojo.students = students
+// if (dojo.students > 50) { dojo.hiring = true}
+// else if (dojo.students <= 0) { dojo = "closed for now"}
+// return dojo;
+// ejecuta function makeDojo("Chicago", 65)
+// console.log(makeDojo("Chicago", 65)) // Imprime el string {name: chicago, students: 65, hiring: true}
+// ejecuta function makeDojo ("Berkeley", 0)
+// console.log(makeDojo("Berkeley", 0) // Imprime "closed for now"
+
+
 
 
 
